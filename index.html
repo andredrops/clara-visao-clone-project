@@ -10,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
 
     <meta property="og:title" content="Ótica Pública Visão Clara" />
     <meta property="og:description" content="Cuidando da sua visão com qualidade e preços acessíveis." />
@@ -22,9 +28,265 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Ótica Pública Visão Clara</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5 bg-primary text-white">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4">Sua visão merece o melhor cuidado</h1>
+            <p class="lead mb-4">Na Ótica Pública Visão Clara, oferecemos soluções completas para sua saúde visual com preços acessíveis e atendimento de qualidade.</p>
+            <div class="d-flex gap-3">
+              <a href="#contact" class="btn btn-light btn-lg px-4">Agende uma consulta</a>
+              <a href="#services" class="btn btn-outline-light btn-lg px-4">Nossos serviços</a>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0 text-center">
+            <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ótica Pública Visão Clara" class="img-fluid rounded shadow-lg" style="max-height: 400px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Nossos Serviços</h2>
+          <p class="text-muted">Conheça o que oferecemos para cuidar da sua saúde visual</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-card">
+              <div class="card-body text-center p-4">
+                <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-flex mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eyeglasses text-primary" viewBox="0 0 16 16">
+                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                  </svg>
+                </div>
+                <h3 class="card-title h5 fw-bold mb-3">Exame de Vista</h3>
+                <p class="card-text mb-3">Exames completos com tecnologia avançada para avaliar a saúde dos seus olhos e detectar problemas visuais com precisão.</p>
+                <a href="#contact" class="btn btn-outline-primary">Agendar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-card">
+              <div class="card-body text-center p-4">
+                <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-flex mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eyeglasses text-primary" viewBox="0 0 16 16">
+                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                  </svg>
+                </div>
+                <h3 class="card-title h5 fw-bold mb-3">Óculos de Grau</h3>
+                <p class="card-text mb-3">Ampla variedade de armações para todos os gostos e necessidades, com lentes de alta qualidade e tecnologia avançada.</p>
+                <a href="#contact" class="btn btn-outline-primary">Ver opções</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-card">
+              <div class="card-body text-center p-4">
+                <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-flex mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-sunglasses text-primary" viewBox="0 0 16 16">
+                    <path d="M3 5a2 2 0 0 0-2 2v.5H.5a.5.5 0 0 0 0 1H1V9a2 2 0 0 0 2 2h1a3 3 0 0 0 3-3 1 1 0 1 1 2 0 3 3 0 0 0 3 3h1a2 2 0 0 0 2-2v-.5h.5a.5.5 0 0 0 0-1H15V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-1.888 1.338A1.99 1.99 0 0 0 8 6a1.99 1.99 0 0 0-1.112.338A2 2 0 0 0 5 5H3zm0 1h.941c.264 0 .933.1.933.5 0 .4-.672.5-.933.5H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1a2 2 0 0 0 2-2 2 2 0 0 1 4 0 2 2 0 0 0 2 2h1a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-.941c-.264 0-.933-.1-.933-.5 0-.4.672-.5.933-.5H13a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-2a1 1 0 0 0-.868.504A1.99 1.99 0 0 0 8 5a1.99 1.99 0 0 0-2.132-.504A1 1 0 0 0 5 4H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1zm7 0h-.941c-.264 0-.933.1-.933.5s.669.5.933.5H10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1 3 3 0 0 0-6 0 1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h.941c.264 0 .933-.1.933-.5S2.205 6 1.941 6H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h2a1 1 0 0 1 .868.504A1.99 1.99 0 0 1 5 2a1.99 1.99 0 0 1 2.132.504A1 1 0 0 1 8 2h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1z"/>
+                  </svg>
+                </div>
+                <h3 class="card-title h5 fw-bold mb-3">Óculos de Sol</h3>
+                <p class="card-text mb-3">Proteção UV completa com estilo. Nossos óculos de sol combinam design moderno com proteção de qualidade para seus olhos.</p>
+                <a href="#contact" class="btn btn-outline-primary">Ver coleções</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="https://images.unsplash.com/photo-1577744168855-0391d2ed2b3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Sobre nós" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">Sobre Nós</h2>
+            <p class="mb-4">A Ótica Pública Visão Clara nasceu com o propósito de democratizar o acesso a produtos ópticos de qualidade. Há mais de 10 anos no mercado, trabalhamos para oferecer soluções visuais que combinam tecnologia, conforto e preço justo.</p>
+            <p class="mb-4">Nossa equipe é formada por profissionais qualificados e apaixonados pelo que fazem, sempre prontos para proporcionar o melhor atendimento e encontrar a solução ideal para cada cliente.</p>
+            <div class="d-flex flex-wrap gap-4 mt-4">
+              <div class="text-center">
+                <h3 class="fw-bold h2 mb-0 text-primary">10+</h3>
+                <p class="text-muted">Anos de experiência</p>
+              </div>
+              <div class="text-center">
+                <h3 class="fw-bold h2 mb-0 text-primary">5000+</h3>
+                <p class="text-muted">Clientes satisfeitos</p>
+              </div>
+              <div class="text-center">
+                <h3 class="fw-bold h2 mb-0 text-primary">100+</h3>
+                <p class="text-muted">Marcas parceiras</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h2 class="fw-bold mb-4">Entre em Contato</h2>
+            <p class="mb-4">Estamos sempre disponíveis para ajudar com suas dúvidas e necessidades. Preencha o formulário ou utilize um de nossos canais de atendimento.</p>
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt text-primary" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="h6 fw-bold mb-1">Endereço</h3>
+                <p class="mb-0">Av. Paulista, 1000 - Bela Vista, São Paulo - SP</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone text-primary" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="h6 fw-bold mb-1">Telefone</h3>
+                <p class="mb-0">(11) 1234-5678</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope text-primary" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="h6 fw-bold mb-1">Email</h3>
+                <p class="mb-0">contato@visaoclara.com.br</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nome completo</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="(00) 00000-0000">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Enviar mensagem</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3 class="h5 fw-bold mb-3">Ótica Pública Visão Clara</h3>
+            <p>Cuidando da sua visão com qualidade e preços acessíveis desde 2010.</p>
+            <div class="d-flex gap-2 mt-3">
+              <a href="#" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3 class="h5 fw-bold mb-3">Horário de Funcionamento</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">Segunda a Sexta: 9h às 18h</li>
+              <li class="mb-2">Sábados: 9h às 13h</li>
+              <li>Domingos e Feriados: Fechado</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="h5 fw-bold mb-3">Links Rápidos</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Serviços</a></li>
+              <li class="mb-2"><a href="#about" class="text-white text-decoration-none">Sobre nós</a></li>
+              <li><a href="#contact" class="text-white text-decoration-none">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 border-secondary">
+        <div class="text-center">
+          <p class="mb-0">&copy; 2023 Ótica Pública Visão Clara. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511912345678" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="whatsapp-icon">
+        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+      </svg>
+    </a>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

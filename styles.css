@@ -1,0 +1,96 @@
+
+/* Custom Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.bg-primary {
+  background-color: #1c64f2 !important;
+}
+
+.text-primary {
+  color: #1c64f2 !important;
+}
+
+.btn-primary {
+  background-color: #1c64f2;
+  border-color: #1c64f2;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.btn-outline-primary {
+  color: #1c64f2;
+  border-color: #1c64f2;
+}
+
+.btn-outline-primary:hover {
+  background-color: #1c64f2;
+  border-color: #1c64f2;
+  color: white;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1c64f2 0%, #1d4ed8 100%);
+}
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #20ba5a;
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
