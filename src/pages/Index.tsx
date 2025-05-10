@@ -1,9 +1,9 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
+import Objectives from "@/components/Objectives"; 
+import ImpactSection from "@/components/ImpactSection";
+import Benefits from "@/components/Benefits";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -12,9 +12,9 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <Services />
-      <About />
-      <Contact />
+      <Objectives />
+      <ImpactSection />
+      <Benefits />
       <Footer />
       <WhatsAppButton />
     </div>

@@ -1,6 +1,5 @@
 
 import { useState, useEffect } from 'react';
-import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,23 +27,16 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#" className="flex items-center">
               <span className="text-xl font-bold text-primary-600">Ótica Pública</span>
-              <span className="text-xl font-bold ml-2">Visão Clara</span>
             </a>
           </div>
           
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-8">
             <a href="#inicio" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">Início</a>
-            <a href="#servicos" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">Serviços</a>
-            <a href="#sobre" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">Sobre</a>
-            <a href="#contato" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">Contato</a>
+            <a href="#objetivos" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">Objetivos</a>
+            <a href="#impacto" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">Impacto</a>
+            <a href="#beneficios" className="text-gray-700 hover:text-primary-600 transition-colors font-medium">Benefícios</a>
           </nav>
-          
-          <div className="hidden md:block">
-            <Button className="bg-primary-600 hover:bg-primary-700">
-              Agendar Consulta
-            </Button>
-          </div>
           
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -68,12 +60,9 @@ const Navbar = () => {
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
               <a href="#inicio" className="text-gray-700 hover:text-primary-600 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>Início</a>
-              <a href="#servicos" className="text-gray-700 hover:text-primary-600 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>Serviços</a>
-              <a href="#sobre" className="text-gray-700 hover:text-primary-600 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>Sobre</a>
-              <a href="#contato" className="text-gray-700 hover:text-primary-600 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>Contato</a>
-              <Button className="bg-primary-600 hover:bg-primary-700 w-full">
-                Agendar Consulta
-              </Button>
+              <a href="#objetivos" className="text-gray-700 hover:text-primary-600 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>Objetivos</a>
+              <a href="#impacto" className="text-gray-700 hover:text-primary-600 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>Impacto</a>
+              <a href="#beneficios" className="text-gray-700 hover:text-primary-600 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>Benefícios</a>
             </div>
           </div>
         )}
